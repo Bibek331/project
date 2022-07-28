@@ -1,0 +1,105 @@
+.packages-title h1{
+	padding: 30px;
+	text-align: center;
+        margin:15px
+}
+
+.packages-container{
+	width: 100%;
+	display: flex;
+	padding: 30px;
+	box-sizing: border-box;
+	flex-direction: row;
+}
+.package1{
+	width: 20%;
+
+	padding:  10px;
+	margin: 5px;
+	flex: 1;
+	border: 5px solid green;
+	cursor: pointer;
+	overflow-wrap: break-word;
+}
+.package1:hover{
+transform: translateY(20px);
+background-color:#D6DBDF;}
+.package1 ul{
+margin:15px
+}
+
+
+
+.package2{
+	width: 20%;
+	
+	padding:  10px;
+	margin: 5px;
+	flex: 1;
+	border: 5px solid green;
+	cursor: pointer;
+}
+.package2 ul{
+margin:15px
+}
+.package2:hover{
+transform: translateY(20px);
+background-color:#D6DBDF;}
+
+
+
+.package3{
+	width: 20%;
+	
+	padding: 10px;
+	margin: 5px;
+	flex: 1;
+	border: 5px solid green;
+	cursor: pointer;
+}
+.package3 ul{
+margin:15px
+}
+.package3:hover{
+transform: translateY(20px);
+background-color:#D6DBDF;}
+
+
+.package4{
+	width: 20%;
+	
+	margin: 5px;
+	padding:  10px;
+	flex: 1;
+	border: 5px solid green;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	overflow-wrap: break-word;
+
+}
+.package4 ul{
+margin:15px
+}
+.package4:hover{
+transform: translateY(20px);
+background-color:#D6DBDF;}
+
+
+@media screen and (max-width: 768px)
+{
+.packages-container{
+	flex-direction: column;
+}
+.package1{
+	width: 100%;
+	}
+.package2{
+	width: 100%;
+	}
+	.package3{
+	width: 100%;
+	}
+	.package4{
+	width: 100%;
+	}

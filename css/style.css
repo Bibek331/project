@@ -1,0 +1,224 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	text-decoration: none;
+	list-style: none;
+	scroll-behavior: smooth;
+}
+
+
+
+header{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: transparent;
+	padding: 30px 18%;
+	transition: ease .40s;
+}
+.logo{
+	font-size: 35px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: white;
+}
+.logo:hover
+{
+	transform: translateX(20px);
+	color: #FFE400 ;
+	font-size: 40px;
+	font-weight: 650;
+	letter-spacing: 1.2px;
+}
+.navbar{
+	display: flex;
+}
+.navbar a{
+	color: white;
+	
+	font-weight: 500;
+	padding: 10px 22px;
+	border-radius: 4px;
+	
+}
+.navbar a:hover{
+	background: white;
+	color: #221314;
+	box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+	border-radius: 4px;
+}
+#menu-icon{
+	color: #fff;
+	font-size: 35px;
+	z-index: 10001;
+	cursor: pointer;
+	display: none;
+}
+
+section{
+	padding: 80px 18%;
+}
+.home{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: url(../img/khaptad.jpg);
+	background-size: cover;
+	background-position: bottom;
+	display: flex;
+	justify-content: center;
+	grid-template-columns: repeat(1, 1fr);
+	align-items: center;
+
+}
+.home-text {
+	
+	line-height: 1.2;
+	color: #fff;
+	font-family: 'Paytone One', sans-serif;
+	letter-spacing: 4px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.home-text p{
+	color: white;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 38px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.home-btn{
+	display: inline-block;
+	font-size: 16px;
+	padding: 15px 30px;
+	background:white;
+	color:#6e54fa;
+	border-radius: 30px;
+	transition: ease .40s;
+}
+.home-btn:hover{
+	background: #7FFF00;
+	transform: scale(1.2);
+}
+
+
+
+
+#contact-detail{
+	background: #6e54fa;
+}
+.main{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.footer{
+	padding: 2;
+}
+.list{
+	width: 25%;
+}
+.list h4{
+	font-size: 21px;
+	color: white;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+
+.list .contact a{
+	color: white;
+	
+	display: block;
+	transition: .3s;
+}
+.list .contact a:hover{
+	
+	transform: translateX(14px);
+}
+.list .social a{
+	height: 40px;
+	width: 40px;
+	background: white;
+	color:  #6e54fa;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 21px;
+	border-radius: 15px;
+	transition: .3s;
+	margin-right: 10px;
+}
+.list .social a:hover{
+	transform: scale(1.2);
+}
+.end-line{
+	text-align: center;
+	padding-top: 90px;
+}
+.end-line p{
+	color: #fff;
+	font-size: 14px;
+	letter-spacing: 2px;
+}
+
+@media (max-width: 1400px){
+	header{
+		padding: 17px 3%;
+		transition: .2s;
+	}
+	
+	section{
+		padding: 80px 3%;
+		transition: .2s;
+	}
+	
+}
+
+@media (max-width: 786px){
+	#menu-icon{
+		display: block;
+
+	}
+	
+	.home{
+		height: 88vh;
+	}
+
+	.navbar{
+		position: absolute;
+		top: 0;
+		right: -100%;  <!--for decoration puppose only--> 
+		width: 270px;
+		height: 120vh;
+		background: #1067cc;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 150px 30px;
+		transition: 0.5s all;
+	}
+		
+}
+
+@media (max-width: 575px){
+	.list{
+		width: 100%;
+	}
+	
+	
+	.text{
+		text-align: center;
+	}
+	.home{
+		height: 85vh;
+		transition: .2s;
+	}

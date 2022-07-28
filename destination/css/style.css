@@ -1,0 +1,102 @@
+.destination-title h1{
+	padding: 30px;
+	text-align: center;
+}
+
+.des-container{
+	width: 100%;
+	display: flex;
+	padding: 30px;
+	box-sizing: border-box;
+	flex-direction: row;
+}
+
+.des1{
+	width: 20%;
+
+	padding:  10px;
+	margin: 5px;
+	flex: 1;
+	
+	cursor: pointer;
+	overflow-wrap: break-word;
+}
+.des1 p{
+    padding-bottom:10px
+}
+
+
+.des2{
+	width: 20%;
+	
+	padding:  10px;
+	margin: 5px;
+	flex: 1;
+	
+	cursor: pointer;
+}
+.des2 p{
+    padding-bottom:10px
+}
+.des3{
+	width: 20%;
+	
+	padding: 10px;
+	margin: 5px;
+	flex: 1;
+	
+	cursor: pointer;
+}
+.des3 p{
+       padding-bottom:20px
+}
+.des4{
+	width: 20%;
+	
+	margin: 5px;
+	padding:  10px;
+	flex: 1;
+	
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	overflow-wrap: break-word;
+
+}
+.des4 p{
+    padding-bottom:10px
+}
+.btnd{
+	color: #fff;
+	border-radius: 20px;
+	margin:20px;
+	padding:10px;
+
+	background-color: #47c35a;
+	font-size: 12px;
+	border: none;
+	cursor: pointer;
+
+}
+.btnd:hover{
+	background: #7FFF00;
+	letter-spacing: 1.2px;
+        
+}
+@media screen and (max-width: 768px)
+{
+.des-container{
+	flex-direction: column;
+}
+.des1{
+	width: 100%;
+	}
+.des2{
+	width: 100%;
+	}
+.des3{
+	width: 100%;
+	}
+.des4{
+	width: 100%;
+	}
